@@ -77,9 +77,43 @@ body{
     padding: 1%;
     text-align: center;
   }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40pt;
+    font-weight: 500;
+  }
   
   .flex-container {
     display: flex;
-    height: 200px;
-    align-items: stretch;
+    flex-direction: row;
+    div{
+      width:33%; 
+      padding:1%;
+      margin:auto
+    } 
+    div{
+      width: 33% 
+      padding: 1%;
+      margin:auto
+    } 
+    div{
+      width: 33% 
+      padding: 1%;
+      margin:auto
+    } 
+  }
+
+
+  .workGrid{
+display:grid;
+grid-template-rows: 100px 100px;
+row-gap: 50px;
+
+  }
+
+  @media only screen and (max width: 600){
+    flex-direction: columns: ;
+width: 100%;
+
   }
